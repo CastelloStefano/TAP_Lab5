@@ -3,12 +3,13 @@
 namespace Lab5.Test
 {
     [TestFixture]
-    class Macro
+    class Test
     {
         [Test]
-        public void Tst()
+        public void Atmp()
         {
-            Assert.That(true);
+            Macro.Macro.MacroExpansion<int>();
         }
+
     }
 }
