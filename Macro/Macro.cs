@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using System.Collections;
 
 namespace Macro
 {
     class Macro
     {
+        public static void MacroExpansion<T>() where T : IEnumerable
+        {
+            
+        }
     }
 }
