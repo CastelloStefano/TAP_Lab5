@@ -9,9 +9,9 @@ namespace Macro
 {
     public class Macro
     {
-        public static IEnumerable<T> MacroExpansion<T>(IEnumerable<T> sequence, T value, IEnumerable<T> newValues)
+        public static IEnumerable<T> MacroExpansion<T>(IEnumerable<T> sequence, object value, IEnumerable<T> newValues)
         {
-            if(typeof(T) != value.GetType()) throw new InvalidEnumArgumentException();
+            if(sequence == null || value == null || newValues == null) throw new ArgumentNullException();
             var res = sequence.ToList();
             var substitute = newValues.ToList();
             var resList = new List<T>();
