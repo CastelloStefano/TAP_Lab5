@@ -9,6 +9,7 @@ namespace Macro
 {
     public class Macro
     {
+        
         public static IEnumerator<T> MacroExpansion<T>(IEnumerable<T> sequence, T value, IEnumerable<T> newValues)
         {
             //var enumerable = sequence as T[] ?? sequence.ToArray();
